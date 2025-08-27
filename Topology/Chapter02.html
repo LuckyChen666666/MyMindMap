@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/katex.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>((getMarkmap) => {
+          window.WebFontConfig = {
+            custom: {
+              families: [
+                "KaTeX_AMS",
+                "KaTeX_Caligraphic:n4,n7",
+                "KaTeX_Fraktur:n4,n7",
+                "KaTeX_Main:n4,n7,i4,i7",
+                "KaTeX_Math:i4,i7",
+                "KaTeX_Script",
+                "KaTeX_SansSerif:n4,n7,i4",
+                "KaTeX_Size1",
+                "KaTeX_Size2",
+                "KaTeX_Size3",
+                "KaTeX_Size4",
+                "KaTeX_Typewriter"
+              ]
+            },
+            active: () => {
+              getMarkmap().refreshHook.call();
+            }
+          };
+        })(() => window.markmap)</script><script src="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.js" defer></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"&#x62d3;&#x6251;&#x7a7a;&#x95f4;","children":[{"content":"&#x57fa;&#x672c;&#x6982;&#x5ff5;","children":[{"content":"&#x62d3;&#x6251;, &#x62d3;&#x6251;&#x57fa;, &#x5b50;&#x57fa;","children":[],"payload":{"tag":"h3","lines":"4,5"}},{"content":"&#x5185;&#x90e8;, &#x95ed;&#x5305;, &#x6781;&#x9650;&#x70b9;","children":[],"payload":{"tag":"h3","lines":"6,7"}},{"content":"&#x8c6a;&#x65af;&#x9053;&#x592b;&#x7a7a;&#x95f4;, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>T</mi><mn>1</mn></msub></mrow><annotation encoding=\"application/x-tex\">T_1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">&#x200b;</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> &#x7a7a;&#x95f4;, &#x5e8f;&#x5217;&#x7684;&#x6536;&#x655b;","children":[],"payload":{"tag":"h3","lines":"8,9"}},{"content":"&#x8fde;&#x7eed;&#x6620;&#x5c04;, &#x540c;&#x80da;, &#x62d3;&#x6251;&#x5d4c;&#x5165;","children":[],"payload":{"tag":"h3","lines":"10,11"}}],"payload":{"tag":"h2","lines":"2,3"}},{"content":"&#x57fa;&#x672c;&#x7ed3;&#x8bba;","children":[{"content":"&#x4e0e;&#x57fa;&#x76f8;&#x5173;&#x7684;&#x7ed3;&#x8bba;","children":[{"content":"&#x57fa;&#x7684;&#x5224;&#x5b9a;","children":[],"payload":{"tag":"h4","lines":"16,17"}},{"content":"&#x7528;&#x57fa;&#x6bd4;&#x8f83;&#x62d3;&#x6251;&#x7684;&#x7c97;&#x7ec6;","children":[],"payload":{"tag":"h4","lines":"18,19"}}],"payload":{"tag":"h3","lines":"14,15"}},{"content":"&#x4e0e;&#x8fde;&#x7eed;&#x6620;&#x5c04;&#x76f8;&#x5173;&#x7684;&#x7ed3;&#x8bba;","children":[{"content":"&#x8fde;&#x7eed;&#x6620;&#x5c04;&#x7684;&#x5224;&#x5b9a;","children":[],"payload":{"tag":"h4","lines":"22,23"}},{"content":"&#x8fde;&#x7eed;&#x6620;&#x5c04;&#x7684;&#x6784;&#x9020;","children":[{"content":"&#x5e38;&#x503c;&#x6620;&#x5c04;, &#x542b;&#x5165;&#x6620;&#x5c04;, &#x590d;&#x5408;&#x6620;&#x5c04;","children":[],"payload":{"tag":"h5","lines":"26,27"}},{"content":"&#x9650;&#x5236;&#x5b9a;&#x4e49;&#x57df;, &#x6539;&#x53d8;&#x966a;&#x57df;","children":[],"payload":{"tag":"h5","lines":"28,29"}},{"content":"&#x5206;&#x5757;&#x8fde;&#x7eed;, &#x62fc;&#x63a5;&#x5f15;&#x7406;","children":[],"payload":{"tag":"h5","lines":"30,31"}}],"payload":{"tag":"h4","lines":"24,25"}}],"payload":{"tag":"h3","lines":"20,21"}}],"payload":{"tag":"h2","lines":"12,13"}},{"content":"&#x51e0;&#x79cd;&#x91cd;&#x8981;&#x7684;&#x62d3;&#x6251;","children":[{"content":"&#x5e8f;&#x62d3;&#x6251;","children":[],"payload":{"tag":"h3","lines":"34,35"}},{"content":"&#x4e58;&#x79ef;&#x62d3;&#x6251;","children":[{"content":"&#x6709;&#x9650;&#x4e2a;&#x7a7a;&#x95f4;","children":[],"payload":{"tag":"h4","lines":"38,39"}},{"content":"&#x4efb;&#x610f;&#x4e2a;&#x7a7a;&#x95f4;","children":[],"payload":{"tag":"h4","lines":"40,41"}}],"payload":{"tag":"h3","lines":"36,37"}},{"content":"&#x5b50;&#x62d3;&#x6251;","children":[],"payload":{"tag":"h3","lines":"42,43"}},{"content":"&#x5ea6;&#x91cf;&#x62d3;&#x6251;","children":[],"payload":{"tag":"h3","lines":"44,45"}}],"payload":{"tag":"h2","lines":"32,33"}}],"payload":{"tag":"h1","lines":"0,1"}},{})</script>
+</body>
+</html>
