@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/katex.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>((getMarkmap) => {
+          window.WebFontConfig = {
+            custom: {
+              families: [
+                "KaTeX_AMS",
+                "KaTeX_Caligraphic:n4,n7",
+                "KaTeX_Fraktur:n4,n7",
+                "KaTeX_Main:n4,n7,i4,i7",
+                "KaTeX_Math:i4,i7",
+                "KaTeX_Script",
+                "KaTeX_SansSerif:n4,n7,i4",
+                "KaTeX_Size1",
+                "KaTeX_Size2",
+                "KaTeX_Size3",
+                "KaTeX_Size4",
+                "KaTeX_Typewriter"
+              ]
+            },
+            active: () => {
+              getMarkmap().refreshHook.call();
+            }
+          };
+        })(() => window.markmap)</script><script src="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.js" defer></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"&#x5176;&#x4ed6;&#x5185;&#x5bb9;","children":[{"content":"&#x57fa;&#x672c;&#x6982;&#x5ff5;","children":[{"content":"Baire &#x7a7a;&#x95f4;","children":[],"payload":{"tag":"h3","lines":"4,5"}},{"content":"&#x5b50;&#x96c6;&#x65cf;&#x7684;&#x9636;, &#x62d3;&#x6251;&#x7ef4;&#x6570;","children":[],"payload":{"tag":"h3","lines":"6,7"}},{"content":"&#x5546;&#x62d3;&#x6251;, &#x5546;&#x6620;&#x5c04;, &#x5546;&#x7a7a;&#x95f4;","children":[],"payload":{"tag":"h3","lines":"8,9"}},{"content":"&#x8d4b;&#x8303;&#x7ebf;&#x6027;&#x7a7a;&#x95f4;, &#x8303;&#x6570;&#x62d3;&#x6251;, &#x8303;&#x6570;&#x7684;&#x7b49;&#x4ef7;","children":[],"payload":{"tag":"h3","lines":"10,11"}},{"content":"&#x9009;&#x62e9;&#x516c;&#x7406;","children":[],"payload":{"tag":"h3","lines":"12,13"}}],"payload":{"tag":"h2","lines":"2,3"}},{"content":"&#x91cd;&#x8981;&#x7ed3;&#x8bba;","children":[{"content":"Baire &#x7a7a;&#x95f4;","children":[{"content":"Baire &#x7a7a;&#x95f4;&#x7684;&#x5f00;&#x7ee7;&#x627f;&#x6027;","children":[],"payload":{"tag":"h4","lines":"18,19"}},{"content":"Baire &#x7eb2;&#x5b9a;&#x7406;","children":[],"payload":{"tag":"h4","lines":"20,21"}}],"payload":{"tag":"h3","lines":"16,17"}},{"content":"&#x62d3;&#x6251;&#x7ef4;&#x6570;","children":[{"content":"&#x95ed;&#x5b50;&#x7a7a;&#x95f4;&#x7684;&#x7ef4;&#x6570; <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>&#x2a7d;</mo></mrow><annotation encoding=\"application/x-tex\">\\leqslant</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7733em;vertical-align:-0.1367em;\"></span><span class=\"mrel amsrm\">&#x2a7d;</span></span></span></span> &#x539f;&#x7a7a;&#x95f4;&#x7684;&#x7ef4;&#x6570;","children":[],"payload":{"tag":"h4","lines":"24,25"}},{"content":"&#x7ef4;&#x6570;&#x7684;&#x62fc;&#x63a5;&#x5f15;&#x7406;","children":[],"payload":{"tag":"h4","lines":"26,27"}}],"payload":{"tag":"h3","lines":"22,23"}},{"content":"&#x5546;&#x62d3;&#x6251;","children":[{"content":"&#x5546;&#x7a7a;&#x95f4;&#x4e0a;&#x6620;&#x5c04;&#x7684;&#x8fde;&#x7eed;&#x6027;","children":[],"payload":{"tag":"h4","lines":"30,31"}}],"payload":{"tag":"h3","lines":"28,29"}},{"content":"&#x8303;&#x6570;&#x62d3;&#x6251;","children":[{"content":"&#x95ed;&#x7403;&#x4e0e;&#x5f00;&#x7403;&#x7684;&#x95ed;&#x5305;&#x4e4b;&#x95f4;&#x7684;&#x5173;&#x7cfb;","children":[],"payload":{"tag":"h4","lines":"34,35"}},{"content":"&#x7b49;&#x4ef7;&#x8303;&#x6570;&#x7684;&#x5224;&#x5b9a;","children":[],"payload":{"tag":"h4","lines":"36,37"}},{"content":"&#x8d4b;&#x8303;&#x7ebf;&#x6027;&#x7a7a;&#x95f4;&#x4e0a;&#x8303;&#x6570;&#x3001;&#x52a0;&#x6cd5;&#x4e0e;&#x6807;&#x91cf;&#x4e58;&#x6cd5;&#x7684;&#x8fde;&#x7eed;&#x6027;","children":[],"payload":{"tag":"h4","lines":"38,39"}},{"content":"&#x6709;&#x9650;&#x7ef4;&#x8d4b;&#x8303;&#x7ebf;&#x6027;&#x7a7a;&#x95f4;","children":[{"content":"&#x6709;&#x9650;&#x7ef4;&#x8d4b;&#x8303;&#x7ebf;&#x6027;&#x7a7a;&#x95f4;&#x4e0a;&#x6240;&#x6709;&#x7684;&#x8303;&#x6570;&#x90fd;&#x7b49;&#x4ef7;","children":[],"payload":{"tag":"h5","lines":"42,43"}},{"content":"&#x6709;&#x9650;&#x7ef4;&#x8d4b;&#x8303;&#x7ebf;&#x6027;&#x7a7a;&#x95f4;&#x4e2d;, &#x7d27; <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>&#x27fa;</mo></mrow><annotation encoding=\"application/x-tex\">\\Longleftrightarrow</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.549em;vertical-align:-0.024em;\"></span><span class=\"mrel\">&#x27fa;</span></span></span></span> [&#x6709;&#x754c; <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>+</mo></mrow><annotation encoding=\"application/x-tex\">+</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">+</span></span></span></span> &#x95ed;]","children":[],"payload":{"tag":"h5","lines":"44,45"}}],"payload":{"tag":"h4","lines":"40,41"}}],"payload":{"tag":"h3","lines":"32,33"}},{"content":"&#x9009;&#x62e9;&#x516c;&#x7406;","children":[{"content":"&#x4e00;&#x65cf;&#x975e;&#x7a7a;&#x96c6;&#x5408;&#x7684;&#x7b1b;&#x5361;&#x5c14;&#x79ef;&#x4e5f;&#x662f;&#x975e;&#x7a7a;&#x7684;","children":[],"payload":{"tag":"h4","lines":"48,49"}}],"payload":{"tag":"h3","lines":"46,47"}}],"payload":{"tag":"h2","lines":"14,15"}}],"payload":{"tag":"h1","lines":"0,1"}},{})</script>
+</body>
+</html>
